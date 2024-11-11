@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application>
+        <provider
+            android:name="com.example.mylibrary.LibraryRepositoryProvider"
+            android:authorities="${applicationId}.wifibase.repository.provider"
+            android:exported="true"
+            android:permission="${applicationId}.library.provider.permission.READ_CONFIGURATION"
+            tools:node="remove"/>
+    </application>
+</manifest>
