@@ -7,7 +7,9 @@ import android.net.Uri
 import android.os.Bundle
 
 class TestContentProvider: ContentProvider() {
-    override fun onCreate(): Boolean = true
+    override fun onCreate(): Boolean {
+        return true
+    }
 
     override fun query(p0: Uri, p1: Array<out String>?, p2: String?, p3: Array<out String>?, p4: String?): Cursor? {
         println("query $p0 $p1 $p2 $p3 $p4")
